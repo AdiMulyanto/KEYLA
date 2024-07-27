@@ -1,11 +1,13 @@
 body {
     font-family: 'Arial', sans-serif;
+    font-size: 16px;
     background: linear-gradient(to right, #ffecd2, #fcb69f);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow-x: hidden;
     overflow: hidden;
     position: relative; /* Added for relative positioning */
 }
@@ -16,8 +18,8 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     padding: 40px;
     text-align: center;
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 1200px;
     animation: fadeIn 2s ease-in-out;
     position: relative;
     z-index: 1;
@@ -200,5 +202,50 @@ button:hover {
     100% {
         transform: translateY(-100vh) rotate(45deg);
         opacity: 0;
+    }
+}
+
+/* Styles for devices with a max width of 768px (tablets and mobile) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .keyla-photo {
+        width: 120px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .music-controls {
+        width: 100%;
+    }
+}
+
+/* Styles for devices with a max width of 480px (small mobile) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .keyla-photo {
+        width: 100px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .music-controls {
+        width: 100%;
+        font-size: 14px;
     }
 }

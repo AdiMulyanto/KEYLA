@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Keyla</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="music-controls">
+            <audio id="background-music" src="musikk.mp3" autoplay loop controls preload="auto"></audio>
+        </div>
+        <h1>Hai Keyla!</h1>
+        <img src="keyla.jpg" alt="Keyla" class="keyla-photo">
+        <p>Ada sesuatu yang ingin aku sampaikan kepadamu.</p>
+        <p>Sejak pertama kali kita bertemu, aku merasa ada yang berbeda. Senyummu, tawamu, semuanya membuat hariku menjadi lebih berwarna.</p>
+        <p>Keyla, aku ingin kamu tahu bahwa aku sangat menyukaimu. Kamu adalah orang yang sangat spesial bagiku.</p>
+        <p>Maukah kamu menjadi bagian dari hidupku?</p>
+        <button onclick="showMessage()">Klik untuk melihat jawabanku</button>
+        <div id="message" class="hidden">
+            <p>Terima kasih telah membaca ini, Keyla. Apapun jawabanmu, aku menghargainya.</p>
+            <div class="buttons">
+                <a href="https://wa.me/62895605922275?text=IYA" class="btn yes">IYA</a>
+                <a href="javascript:void(0)" class="btn no" id="noButton">TIDAK</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

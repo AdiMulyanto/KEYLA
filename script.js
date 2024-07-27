@@ -1,3 +1,7 @@
+if (window.matchMedia("(max-width: 768px)").matches) {
+    // Lakukan sesuatu jika di perangkat kecil
+}
+
 function showMessage() {
     const message = document.getElementById('message');
     message.classList.toggle('hidden');

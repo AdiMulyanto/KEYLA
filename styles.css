@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to top, #fbfbfa, #00e1f68a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative; /* Added for relative positioning */
+}
+
+.container {
+    background: linear-gradient(to bottom, #5ad8ff, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    animation: fadeIn 2s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.music-controls {
+    position: fixed; /* Change to fixed positioning */
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 199, 254, 0.2);
+    z-index: 1000; /* Ensure it appears on top of everything else */
+}
+
+.music-controls audio {
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+
+h1 {
+    color: #ff0099;
+    font-size: 2.6em;
+    margin-bottom: 10px;
+    animation: fadeInDown 3s ease-in;
+}
+
+p {
+    font-size: 1.3em;
+    line-height: 1.1;
+    color: #333;
+    animation: fadeInUp 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
